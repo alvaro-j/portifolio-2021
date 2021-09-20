@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Tela1 from "./components/Tela1";
+import Contato from "./components/Contato";
+import Formacao from "./components/Formacao";
+import Projetos from "./components/Projetos";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Router>
+      <header className="header">
+        <Link to="/">
+          <h1 id="logo">Álvaro</h1>
+        </Link>
+        <nav id='nav'>
+          <button id="btn-mobile" onClick={toggleMenu}>Menu</button>
+          <ul className="menu">
+            <Link to="/contato">
+              <li>Contato</li>
+            </Link>
+            <Link to="/formacao">
+              <li>Formação</li>
+            </Link>
+            <Link to="/projetos">
+              <li>Projetos</li>
+            </Link>
+          </ul>
+        </nav>
       </header>
-    </div>
+
+      <Switch>
+        <Route path="/" exact>
+          <TelaHome />
+        </Route>
+        <Route path="/contato">
+          <ContatoTela />
+        </Route>
+        <Route path="/formacao">
+          <FormacaoTela />
+        </Route>
+        <Route path="/projetos">
+          <ProjetosTela />
+        </Route>
+      </Switch>
+    </Router>
   );
+}
+
+
+function toggleMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active'); //toggle = add caso não tenha, remova caso tenha
+}
+
+
+function TelaHome() {
+  return <Tela1 />;
+}
+function ContatoTela() {
+  return <Contato />;
+}
+function FormacaoTela() {
+  return <Formacao />;
+}
+function ProjetosTela() {
+  return <Projetos />;
 }
 
 export default App;

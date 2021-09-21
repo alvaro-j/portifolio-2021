@@ -285,7 +285,7 @@ section p {
   }
 
   #btn-mobile {
-    display: flex;
+    display: block;
     padding: 10px;
     font-size: 1rem;
     border: none;
@@ -295,16 +295,31 @@ section p {
   }
 
   #hamburguer {
+    display: block;
     border-top: 2px solid white;
     width: 20px;
   }
 
-  #hamburguer::after, #hamburguer::before { 
-    content: ''; /*after e before só aparece se tiver um content*/
+  #hamburguer::after, #hamburguer::before {
+    content: ""; /*after e before só aparece se tiver um content*/
     display: block; /*só aceita height e width se for um elemento de bloco*/
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color: currentColor; /* currentColor pega a cor que estiver no hamburguer*/
     margin-top: 3px;
+    transition: .4s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -5px; /*top só funciona se o elemento for position: absolute, relative ou fixed*/
   }
 }

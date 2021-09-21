@@ -12,9 +12,9 @@ function App() {
         <Link to="/">
           <h1 id="logo">Álvaro</h1>
         </Link>
-        <nav id='nav'>
+        <nav id="nav">
           <button id="btn-mobile" onClick={toggleMenu}>
-          <span id='hamburguer'></span>
+            <span id="hamburguer"></span>
           </button>
           <ul className="menu">
             <Link to="/contato">
@@ -48,12 +48,10 @@ function App() {
   );
 }
 
-
 function toggleMenu() {
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active'); //toggle = add caso não tenha, remova caso tenha
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active"); //toggle = add caso não tenha, remova caso tenha
 }
-
 
 function TelaHome() {
   return <Tela1 />;

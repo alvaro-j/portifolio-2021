@@ -15,6 +15,8 @@ export default function Tela1() {
             <li>JavaScript, React</li>
             <li>CSS, SASS</li>
             <li>HTML</li>
+            <li>Git e Github</li>
+            <li>Inglês</li>
           </ul>
         </article>
         <div className="introducao-img">

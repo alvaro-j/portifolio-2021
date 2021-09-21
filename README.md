@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Personal portfolio - 2021 verison
 
-![giphy](https://user-images.githubusercontent.com/86482525/125136329-01f48e80-e0e1-11eb-90fb-912928271ba1.gif)
+![image](https://user-images.githubusercontent.com/86482525/134183976-a4f694b8-920a-48e2-8a31-3ac9ec15dbb8.png)
 
 ## Table of contents✒️
 

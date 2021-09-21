@@ -262,28 +262,34 @@ section p {
     width: 100%;
     top: 51px;
     right: 0px;
-    transition: .6s;
+    transition: 0.6s;
     z-index: 1000; /*serve para garantir que o menu vai ficar acima de todoso os elementos do site.*/
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
-  
+
   .menu li {
     padding: 1rem 0px;
     margin: 0 10px;
   }
-  
-  #btn-mobile {
-    display: block;
-  }
-  
+
   #nav.active .menu {
     height: 100vh;
     visibility: visible;
+    overflow-y: auto;
   }
 
   .menu li {
     border-bottom: 1px solid #d4d4d449;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 }

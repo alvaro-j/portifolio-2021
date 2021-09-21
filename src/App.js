@@ -13,7 +13,9 @@ function App() {
           <h1 id="logo">Álvaro</h1>
         </Link>
         <nav id='nav'>
-          <button id="btn-mobile" onClick={toggleMenu}>Menu</button>
+          <button id="btn-mobile" onClick={toggleMenu}>Menu
+          <span id='hamburguer'></span>
+          </button>
           <ul className="menu">
             <Link to="/contato">
               <li>Contato</li>

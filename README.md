@@ -1,7 +1,3 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 # Personal portfolio - 2021 verison
 
 ![image](https://user-images.githubusercontent.com/86482525/134183976-a4f694b8-920a-48e2-8a31-3ac9ec15dbb8.png)
@@ -56,3 +52,7 @@ var sec = String(new Date().getSeconds())
 ## Author🙋🏻
 
 - Website - [Álvaro J.](https://www.github.com/alvaro-j/)
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

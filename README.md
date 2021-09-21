@@ -2,9 +2,12 @@
 
 ![image](https://user-images.githubusercontent.com/86482525/134183976-a4f694b8-920a-48e2-8a31-3ac9ec15dbb8.png)
 
+## Getting Started with Create React App ⚛
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Table of contents✒️
 
-- [Create React App](#getting-started-with-create-react-app)⚛
 - [Overview](#overview)🎯
   - [Links](#links)🔗
 - [My process](#my-process)🧩
@@ -12,11 +15,6 @@
   - [What I learned](#what-i-learned)📝
   - [Useful resources](#useful-resources)
 - [Author](#author)🙋🏻
-
-
-## Getting Started with Create React App ⚛
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Overview🎯
 

@@ -286,10 +286,25 @@ section p {
 
   #btn-mobile {
     display: flex;
-    padding: .5rem 1rem;
+    padding: 10px;
     font-size: 1rem;
     border: none;
     background: none;
     cursor: pointer;
+    color: white;
+  }
+
+  #hamburguer {
+    border-top: 2px solid white;
+    width: 20px;
+  }
+
+  #hamburguer::after, #hamburguer::before { 
+    content: ''; /*after e before só aparece se tiver um content*/
+    display: block; /*só aceita height e width se for um elemento de bloco*/
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin-top: 3px;
   }
 }

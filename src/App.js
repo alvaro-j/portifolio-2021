@@ -13,7 +13,7 @@ function App() {
           <h1 id="logo">Álvaro</h1>
         </Link>
         <nav id='nav'>
-          <button id="btn-mobile" onClick={toggleMenu}>Menu
+          <button id="btn-mobile" onClick={toggleMenu}>
           <span id='hamburguer'></span>
           </button>
           <ul className="menu">

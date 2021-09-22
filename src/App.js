@@ -54,10 +54,10 @@ function App() {
 
 MySwal.fire({
   position: "top-end",
-  icon: "arrow",
-  title: "Navegue por aqui☝",
+  title: "Navegue por aqui &uarr;",
   showConfirmButton: false,
   timer: 1500,
+  timerProgressBar: true,
 });
 
 function toggleMenu() {

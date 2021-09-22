@@ -4,6 +4,10 @@ import Tela1 from "./components/Tela1";
 import Contato from "./components/Contato";
 import Formacao from "./components/Formacao";
 import Projetos from "./components/Projetos";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 function App() {
   return (
@@ -47,6 +51,14 @@ function App() {
     </Router>
   );
 }
+
+MySwal.fire({
+  position: "top-end",
+  icon: "arrow",
+  title: "Navegue por aqui☝",
+  showConfirmButton: false,
+  timer: 1500,
+});
 
 function toggleMenu() {
   const nav = document.getElementById("nav");

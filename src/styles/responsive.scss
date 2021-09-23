@@ -1,0 +1,96 @@
+@media (max-width: 768px) {
+  .introducao, .contato {
+    display: block;
+  }
+
+  #logo {
+    font-size: 26px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  .introducao article {
+    margin-bottom: 40px;
+  }
+
+  .contato article {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  .formacao {
+    display: block;
+  }
+
+  .menu {
+    background-color: #161616;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 51px;
+    right: 0px;
+    transition: 0.6s;
+    z-index: 1000; /*serve para garantir que o menu vai ficar acima de todoso os elementos do site.*/
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #nav.active .menu {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .menu li {
+    border-bottom: 1px solid #d4d4d449;
+    padding: 1rem 0px;
+    margin: 0 10px;
+  }
+
+  #btn-mobile {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  #hamburguer {
+    display: block;
+    border-top: 2px solid white;
+    width: 20px;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: ""; /*after e before só aparece se tiver um content*/
+    display: block; /*só aceita height e width se for um elemento de bloco*/
+    width: 20px;
+    height: 2px;
+    background-color: currentColor; /* currentColor pega a cor que estiver no hamburguer*/
+    margin-top: 3px;
+    transition: 0.4s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -5px; /*top só funciona se o elemento for position: absolute, relative ou fixed*/
+  }
+}

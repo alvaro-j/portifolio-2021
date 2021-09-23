@@ -1,0 +1,26 @@
+.formacao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 70vh;
+
+  article {
+    flex: 1;
+  }
+}
+
+.formacao-span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    max-width: 32px;
+    display: inline;
+    margin-right: 20px;
+  }
+}
+
+.formacao-img {
+  max-width: 600px;
+}

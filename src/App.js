@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Tela1 from "./components/Tela1";
 import Contato from "./components/Contato";

@@ -59,9 +59,9 @@ MySwal.fire({
   timerProgressBar: true,
 });
 
-function toggleMenu() {
+let toggleMenu = () => {
   const nav = document.getElementById("nav");
-  nav.classList.toggle("active"); //toggle = add caso não tenha, remova caso tenha
+  return nav.classList.toggle("active"); //toggle = add caso não tenha, remova caso tenha
 }
 
 function TelaHome() {

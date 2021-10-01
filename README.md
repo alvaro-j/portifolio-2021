@@ -41,9 +41,22 @@ let toggleMenu = () => {
   return nav.classList.toggle("active");
 }
 ```
-- Soon...
+- Use <strong>React Router DOM</strong> to acess differents pages.
 ```js
-
+<Switch>
+  <Route path="/" exact>
+    <TelaHome />
+  </Route>
+  <Route path="/contato">
+    <ContatoTela />
+  </Route>
+  <Route path="/formacao">
+    <FormacaoTela />
+  </Route>
+  <Route path="/projetos">
+    <ProjetosTela />
+  </Route>
+</Switch>
 ```
 ### Useful resources
 

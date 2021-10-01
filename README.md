@@ -31,6 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Flexbox
 - JavaScript(React.js)
 - Create React App
+- SASS
 
 ### What I learned📝
 

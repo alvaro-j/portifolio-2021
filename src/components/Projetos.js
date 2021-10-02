@@ -49,13 +49,13 @@ export default function Projetos() {
                         </div>
                     </div>
                     <div className='projetos-itens'>
-                        <img src='images/interrogacao.svg' alt='question mark'></img>
+                        <img src='images/tip-calculator.bmp' alt='tip calculator app'></img>
                         <span>
-                        Em breve...
+                        Tip calculator app. Challenge from Frondend Mentor. 
                         </span>
                         <div className='container-btn'>
-                            <a className='btn' href='http://github.com/alvaro-j'>Demo</a>
-                            <a className='btn' href='http://github.com/alvaro-j'>Repo</a>
+                            <a className='btn' href='https://alvaro-j.github.io/tip-calculator-app/' target='_blank' rel='noreferrer'>Demo</a>
+                            <a className='btn' href='http://github.com/alvaro-j/tip-calculator-app' target='_blank' rel='noreferrer'>Repo</a>
                         </div>
                     </div>
                     <div className='projetos-itens'>

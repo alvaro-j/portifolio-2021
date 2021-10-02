@@ -31,16 +31,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Flexbox
 - JavaScript(React.js)
 - Create React App
+- SASS
 
 ### What I learned📝
 
-- Use <strong>top, left, position</strong> and <strong>transform</strong> property to center a div element on screen.
-```css
-
-```
-- Use <strong>getHours(), getMinutes()</strong> and <strong>getSeconds()</strong> method to get the current system hours, minutes and seconds.
+- Use an <strong>arrow function</strong>. In this case i wanted to add the class "active" to the element with "nav" id.
 ```js
-
+let toggleMenu = () => {
+  const nav = document.getElementById("nav");
+  return nav.classList.toggle("active");
+}
+```
+- Use <strong>React Router DOM</strong> to acess differents pages.
+```js
+<Switch>
+  <Route path="/" exact>
+    <TelaHome />
+  </Route>
+  <Route path="/contato">
+    <ContatoTela />
+  </Route>
+  <Route path="/formacao">
+    <FormacaoTela />
+  </Route>
+  <Route path="/projetos">
+    <ProjetosTela />
+  </Route>
+</Switch>
 ```
 ### Useful resources
 

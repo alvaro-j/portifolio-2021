@@ -6,6 +6,16 @@ export default function Projetos() {
             <section className='projetos'>
                 <h1>Projetos:</h1>
                 <article>
+                <div className='projetos-itens'>
+                        <img src='images/weather-app.png' alt='weather app'></img>
+                        <span>
+                        Weather app using OpenWeather API. 
+                        </span>
+                        <div className='container-btn'>
+                            <a className='btn' href='https://weather-app-jet-iota.vercel.app/' target="_blank" rel="noreferrer">Demo</a>
+                            <a className='btn' href='http://github.com/alvaro-j/weather-app' target="_blank" rel="noreferrer">Repo</a>
+                        </div>
+                    </div>
                     <div className='projetos-itens'>
                         <img src='images/buylist.png' alt='buylist'></img>
                         <span>
@@ -19,7 +29,17 @@ export default function Projetos() {
                         </div>
                     </div>
                     <div className='projetos-itens'>
-                        <img src='images/pricing-component.bmp' alt='pricing component'></img>
+                        <img src='images/nlw-heat.png' alt='nlw heat'></img>
+                        <span>
+                        Project developed on NLW Heat using Github API. 
+                        </span>
+                        <div className='container-btn'>
+                            <a className='btn' href='https://alvaro-j.github.io/NLW-Heat/' rel='noreferrer' target='_blank'>Demo</a>
+                            <a className='btn' href='https://github.com/alvaro-j/NLW-heat' target='_blank' rel='noreferrer'>Repo</a>
+                        </div>
+                    </div>
+                    <div className='projetos-itens'>
+                        <img src='images/pricing-component.png' alt='pricing component'></img>
                         <span>
                         Pricing component with toggle. Challenge from Frontend Mentor. 
                         </span>
@@ -39,16 +59,6 @@ export default function Projetos() {
                         </div>
                     </div>
                     <div className='projetos-itens'>
-                        <img src='images/fylo.bmp' alt='fylo component'></img>
-                        <span>
-                        Fylo data storage component. Challenge from Frontend Mentor.  
-                        </span>
-                        <div className='container-btn'>
-                            <a className='btn' href='https://alvaro-j.github.io/fylo-data-storage-component/' rel='noreferrer' target='_blank'>Demo</a>
-                            <a className='btn' href='https://github.com/alvaro-j/fylo-data-storage-component' target='_blank' rel='noreferrer'>Repo</a>
-                        </div>
-                    </div>
-                    <div className='projetos-itens'>
                         <img src='images/tip-calculator.bmp' alt='tip calculator app'></img>
                         <span>
                         Tip calculator app. Challenge from Frondend Mentor. 
@@ -56,16 +66,6 @@ export default function Projetos() {
                         <div className='container-btn'>
                             <a className='btn' href='https://alvaro-j.github.io/tip-calculator-app/' target='_blank' rel='noreferrer'>Demo</a>
                             <a className='btn' href='http://github.com/alvaro-j/tip-calculator-app' target='_blank' rel='noreferrer'>Repo</a>
-                        </div>
-                    </div>
-                    <div className='projetos-itens'>
-                        <img src='images/interrogacao.svg' alt='question mark'></img>
-                        <span>
-                        Em breve...
-                        </span>
-                        <div className='container-btn'>
-                            <a className='btn' href='http://github.com/alvaro-j'>Demo</a>
-                            <a className='btn' href='http://github.com/alvaro-j'>Repo</a>
                         </div>
                     </div>
                 </article>

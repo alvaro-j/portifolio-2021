@@ -12,37 +12,37 @@ export default function Tela1() {
 					<details>
 						<summary>Front End</summary>
 						<div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>JavaScript, React</p>
 						</div>
 						<div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>CSS, SASS</p>
 						</div>
 						<div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>HTML</p>
 						</div>
 					</details>
 					<details>
 						<summary>Ferramentas</summary>
             <div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>Git e Github</p>
 						</div>
             <div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>Visual Studio Code</p>
 						</div>          
 					</details>
 					<details>
 						<summary>Idiomas</summary>
             <div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>Inglês</p>
 						</div>   
             <div className="knowledge-div">
-							<img src="images/check.png"></img>
+							<img src="images/check.png" alt="check icon"></img>
 							<p>Português</p>
 						</div>   
 					</details>

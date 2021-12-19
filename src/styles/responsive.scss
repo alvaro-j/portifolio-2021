@@ -40,6 +40,10 @@
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
+
+    a {
+      color: #fff !important;
+    }
   }
 
   #nav.active .menu {

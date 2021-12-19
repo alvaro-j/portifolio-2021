@@ -16,7 +16,12 @@ const App = () => {
 					<h1 id="logo">Álvaro</h1>
 				</Link>
 				<nav id="nav">
-					<button id="btn-mobile" onClick={toggleMenu}>
+					<button
+						id="btn-mobile"
+						onClick={({ currentTarget }) =>
+							currentTarget.parentElement.classList.toggle("active")
+						}
+					>
 						<span id="hamburguer"></span>
 					</button>
 					<ul className="menu">
@@ -49,7 +54,7 @@ const App = () => {
 			</Switch>
 		</Router>
 	);
-}
+};
 
 MySwal.fire({
 	position: "top-end",
@@ -58,11 +63,6 @@ MySwal.fire({
 	timer: 1500,
 	timerProgressBar: true,
 });
-
-const toggleMenu = (event) => {
-  const nav = event.currentTarget.parentElement;
-	nav.classList.toggle("active"); //toggle = add caso não tenha, remova caso tenha
-};
 
 function TelaHome() {
 	return <Tela1 />;

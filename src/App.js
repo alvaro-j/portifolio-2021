@@ -25,13 +25,13 @@ const App = () => {
 						<span id="hamburguer"></span>
 					</button>
 					<ul className="menu">
-						<Link to="/contato">
+						<Link className={window.location.pathname.includes('contato') ? 'link-active' : ""} to="/contato">
 							<li>Contato</li>
 						</Link>
-						<Link to="/formacao">
+						<Link className={window.location.pathname.includes('formacao') ? 'link-active' : ""}  to="/formacao">
 							<li>Formação</li>
 						</Link>
-						<Link to="/projetos">
+						<Link className={window.location.pathname.includes('projetos') ? 'link-active' : ""}  to="/projetos">
 							<li>Projetos</li>
 						</Link>
 					</ul>

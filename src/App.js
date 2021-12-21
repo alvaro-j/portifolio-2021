@@ -5,6 +5,7 @@ import Formacao from "./components/Formacao";
 import Projetos from "./components/Projetos";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { NavLink } from "react-router-dom";
 
 const MySwal = withReactContent(Swal);
 
@@ -25,15 +26,15 @@ const App = () => {
 						<span id="hamburguer"></span>
 					</button>
 					<ul className="menu">
-						<Link className={window.location.pathname.includes('contato') ? 'link-active' : ""} to="/contato">
+						<NavLink activeClassName="link-active" to="/contato">
 							<li>Contato</li>
-						</Link>
-						<Link className={window.location.pathname.includes('formacao') ? 'link-active' : ""}  to="/formacao">
+						</NavLink>
+						<NavLink activeClassName="link-active" to="/formacao">
 							<li>Formação</li>
-						</Link>
-						<Link className={window.location.pathname.includes('projetos') ? 'link-active' : ""}  to="/projetos">
+						</NavLink>
+						<NavLink activeClassName="link-active" to="/projetos">
 							<li>Projetos</li>
-						</Link>
+						</NavLink>
 					</ul>
 				</nav>
 			</header>

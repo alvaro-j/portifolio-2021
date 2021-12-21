@@ -7,7 +7,7 @@ export default function Tela1() {
 				<article>
 					<h2>👋Hello world</h2>
 					<h1>Álvaro Jaime</h1>
-					<h2>Frontend Developer</h2>
+					<h2>Front end Developer</h2>
 					<p>Conhecimentos:</p>
 					<details open>
 						<summary>Front End</summary>

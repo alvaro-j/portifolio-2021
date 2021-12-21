@@ -9,7 +9,7 @@ export default function Tela1() {
 					<h1>Álvaro Jaime</h1>
 					<h2>Frontend Developer</h2>
 					<p>Conhecimentos:</p>
-					<details>
+					<details open>
 						<summary>Front End</summary>
 						<div className="knowledge-div">
 							<img src="images/check.png" alt="check icon"></img>

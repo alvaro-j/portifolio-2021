@@ -35,7 +35,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### What I learned📝
 
-- Use React props:
+- Use <strong>React props</strong>:
 ```js
 const Projeto = ({textSpan, urlImg, urlDemo, urlRepo, imgAlt}) ...
 ```

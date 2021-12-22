@@ -26,29 +26,33 @@ export default function Tela1() {
 					</details>
 					<details>
 						<summary>Ferramentas</summary>
-            <div className="knowledge-div">
+						<div className="knowledge-div">
 							<img src="images/check.png" alt="check icon"></img>
 							<p>Git e Github</p>
 						</div>
-            <div className="knowledge-div">
+						<div className="knowledge-div">
 							<img src="images/check.png" alt="check icon"></img>
 							<p>Visual Studio Code</p>
-						</div>          
+						</div>
 					</details>
 					<details>
 						<summary>Idiomas</summary>
-            <div className="knowledge-div">
+						<div className="knowledge-div">
 							<img src="images/check.png" alt="check icon"></img>
 							<p>Inglês</p>
-						</div>   
-            <div className="knowledge-div">
+						</div>
+						<div className="knowledge-div">
 							<img src="images/check.png" alt="check icon"></img>
 							<p>Português</p>
-						</div>   
+						</div>
 					</details>
 				</article>
 				<div className="introducao-img">
-					<img src="images/undraw_react_y7wq.svg" alt="svg react"></img>
+					<img
+						draggable="false"
+						src="images/undraw_react_y7wq.svg"
+						alt="svg react"
+					></img>
 				</div>
 			</section>
 		</div>

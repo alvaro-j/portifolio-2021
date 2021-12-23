@@ -35,6 +35,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### What I learned📝
 
+- Use <strong>React props</strong>:
+```js
+const Projeto = ({textSpan, urlImg, urlDemo, urlRepo, imgAlt}) ...
+```
 - Use an <strong>arrow function</strong>. In this case i wanted to add the class "active" to the element with "nav" id.
 ```js
 let toggleMenu = () => {

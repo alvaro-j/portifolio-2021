@@ -7,6 +7,7 @@ import "./styles/introducao.scss";
 import "./styles/contato.scss";
 import "./styles/formacao.scss";
 import "./styles/projetos.scss";
+import "./styles/projeto.scss";
 import "./styles/responsive.scss";
 
 ReactDOM.render(

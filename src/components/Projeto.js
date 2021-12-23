@@ -2,7 +2,7 @@ import React from "react";
 
 const Projeto = ({textSpan, urlImg, urlDemo, urlRepo, imgAlt}) => {
 	return (
-			<div className="projetos-itens">
+			<div className="projeto-item">
 				<img draggable="false" src={urlImg} alt={imgAlt}></img>
 				<span>{textSpan}</span>
 				<div className="container-btn">

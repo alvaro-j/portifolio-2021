@@ -11,6 +11,12 @@
     padding: 40px 10px;
   }
 
+  .header .link-active {
+    &:hover {
+      border: 0;
+    }
+  }
+
   .introducao article {
     margin-bottom: 40px;
   }

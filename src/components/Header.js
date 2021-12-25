@@ -16,8 +16,9 @@ const Header = () => {
 		<Router>
 			<header className="header">
 				<Link
-					onClick={() => {
+					onClick={({ target }) => {
 						setPageTitle("Portifólio - Home");
+						target.parentElement.nextSibling.classList.remove("active");
 					}}
 					to="/"
 				>
@@ -34,8 +35,11 @@ const Header = () => {
 					</button>
 					<ul className="menu">
 						<NavLink
-							onClick={() => {
+							onClick={({ target }) => {
 								setPageTitle("Portifólio - Contato");
+								target.parentElement.parentElement.parentElement.classList.remove(
+									"active"
+								);
 							}}
 							activeClassName="link-active"
 							to="/contato"
@@ -43,8 +47,11 @@ const Header = () => {
 							<li>Contato</li>
 						</NavLink>
 						<NavLink
-							onClick={() => {
+							onClick={({ target }) => {
 								setPageTitle("Portifólio - Formação");
+								target.parentElement.parentElement.parentElement.classList.remove(
+									"active"
+								);
 							}}
 							activeClassName="link-active"
 							to="/formacao"
@@ -52,8 +59,11 @@ const Header = () => {
 							<li>Formação</li>
 						</NavLink>
 						<NavLink
-							onClick={() => {
+							onClick={({ target }) => {
 								setPageTitle("Portifólio - Projetos");
+								target.parentElement.parentElement.parentElement.classList.remove(
+									"active"
+								);
 							}}
 							activeClassName="link-active"
 							to="/projetos"

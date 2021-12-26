@@ -35,6 +35,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### What I learned📝
 
+- Use <strong>React Hooks</strong>. In this case i wanted to change the page title:
+```js
+const [pageTitle, setPageTitle] = React.useState(document.title);
+
+	React.useEffect(() => {
+		document.title = pageTitle; //quando o componento for renderizado pelo setPageTitle, ele executa esse useEffect pra trocar o título da página
+	});
+```
 - Use <strong>React props</strong>:
 ```js
 const Projeto = ({textSpan, urlImg, urlDemo, urlRepo, imgAlt}) ...

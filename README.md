@@ -40,7 +40,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 const [pageTitle, setPageTitle] = React.useState(document.title);
 
 	React.useEffect(() => {
-		document.title = pageTitle; //quando o componento for renderizado pelo setPageTitle, ele executa esse useEffect pra trocar o título da página
+		document.title = pageTitle;
 	});
 ```
 - Use <strong>React props</strong>:

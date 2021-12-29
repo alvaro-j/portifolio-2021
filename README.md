@@ -29,7 +29,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- JavaScript(React.js)
+- JavaScript
+- React.js, Hooks
 - Create React App
 - SASS
 

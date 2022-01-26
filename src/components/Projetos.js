@@ -1,81 +1,96 @@
 import React from "react";
 import Projeto from "./Projeto";
 
+import { Container, Grid, Typography } from "@material-ui/core";
+
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles((theme) => ({
+	container: {
+		backgroundColor: theme.palette.background.paper,
+		padding: theme.spacing(8, 0, 6),
+	},
+	cardGrid: {
+		padding: "20px 0",
+		[theme.breakpoints.down("md")]: {
+			padding: "20px 10px",
+		},
+	},
+	typography: {
+		marginBottom: "20px",
+		fontSize: "3em",
+		maxWidth: "960px",
+		fontFamily: "Arial",
+		fontWeight: "700",
+	},
+}));
+
 export default function Projetos() {
+	const classes = useStyles();
 	return (
-		<div>
-			<section className="projetos">
-				<h1>Projetos:</h1>
-				<article>
-					<Projeto
-						urlImg={"images/weather-app.png"}
-						textSpan={"Weather app using OpenWeather API."}
-						urlDemo={"https://weather-app-jet-iota.vercel.app/"}
-						urlRepo={"http://github.com/alvaro-j/weather-app"}
-						imgAlt="weather app"
-					/>
-					<Projeto
-						urlImg={"images/nlw-heat.png"}
-						textSpan={"Project developed on NLW Heat using Github API."}
-						urlDemo={"https://alvaro-j.github.io/NLW-Heat/"}
-						urlRepo={"https://github.com/alvaro-j/NLW-heat"}
-						imgAlt="nlw heat"
-					/>
-					<Projeto
-						urlImg={"images/url-shortener.png"}
-						textSpan={
-							"URL shortening API landing page. Challenge from Frontend Mentor."
-						}
-						urlDemo={"https://alvaro-j.github.io/url-shortening/"}
-						urlRepo={"https://github.com/alvaro-j/url-shortening"}
-						imgAlt="url shortener app"
-					/>
-					<Projeto
-						urlImg={"images/buylist.png"}
-						textSpan={"Buy list with add and remove function."}
-						urlDemo={"https://alvaro-j.github.io/buylist-project/"}
-						urlRepo={"https://github.com/alvaro-j/buylist-project"}
-						imgAlt="buylist"
-					/>
-					<Projeto
-						urlImg={"images/pricing-component.png"}
-						textSpan={
-							"Pricing component with toggle. Challenge from Frontend Mentor."
-						}
-						urlDemo={"https://alvaro-j.github.io/pricing-component/"}
-						urlRepo={"https://github.com/alvaro-j/pricing-component"}
-						imgAlt="pricing component"
-					/>
-					<Projeto
-						urlImg={"images/digital-clock.bmp"}
-						textSpan={"Digital clock made with HTML, CSS and JavaScript."}
-						urlDemo={"https://alvaro-j.github.io/digital-clock/"}
-						urlRepo={"https://github.com/alvaro-j/digital-clock"}
-						imgAlt="digital clock"
-					/>
-					<Projeto
-						urlImg={"images/tip-calculator.bmp"}
-						textSpan={"Tip calculator app. Challenge from Frondend Mentor."}
-						urlDemo={"https://alvaro-j.github.io/tip-calculator-app/"}
-						urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
-						imgAlt="tip calculator app"
-					/>
-					<Projeto
-						urlImg={"images/interrogacao.svg"}
-						textSpan={"Soon..."}
-						urlDemo={"https://alvaro-j.github.io/tip-calculator-app/"}
-						urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
-						imgAlt="interrogação"
-					/>
-					<Projeto
-						urlImg={"images/interrogacao.svg"}
-						textSpan={"Soon..."}
-						urlDemo={"http://github.com/alvaro-j/"}
-						urlRepo={"http://github.com/alvaro-j/"}
-						imgAlt="interrogação"
-					/>
-				</article>
-			</section>
-		</div>
+		<Container className={classes.cardGrid} maxWidth="md">
+			<Typography className={classes.typography} variant="h1">
+				Projetos:
+			</Typography>
+			<Grid container spacing={4}>
+				<Projeto
+					urlImg={"images/weather-app.png"}
+					textSpan={"Weather app using OpenWeather API."}
+					urlDemo={"https://weather-app-jet-iota.vercel.app/"}
+					urlRepo={"http://github.com/alvaro-j/weather-app"}
+					imgAlt="weather app"
+					title="Weather app"
+				/>
+				<Projeto
+					urlImg={"images/nlw-heat.png"}
+					textSpan={"Project developed on NLW Heat using Github API."}
+					urlDemo={"https://alvaro-j.github.io/NLW-Heat/"}
+					urlRepo={"https://github.com/alvaro-j/NLW-heat"}
+					imgAlt="nlw heat"
+					title="NLW Heat"
+				/>
+				<Projeto
+					urlImg={"images/url-shortener.png"}
+					textSpan={"URL shortening API landing page. Challenge from Frontend Mentor."}
+					urlDemo={"https://alvaro-j.github.io/url-shortening/"}
+					urlRepo={"https://github.com/alvaro-j/url-shortening"}
+					imgAlt="url shortener app"
+					title="Url shortener app"
+				/>
+				<Projeto
+					urlImg={"images/buylist.png"}
+					textSpan={"Buy list with add and remove function. Made with JavaScript, HTML and CSS only."}
+					urlDemo={"https://alvaro-j.github.io/buylist-project/"}
+					urlRepo={"https://github.com/alvaro-j/buylist-project"}
+					imgAlt="buylist"
+				/>
+				<Projeto
+					urlImg={"images/pricing-component.png"}
+					textSpan={"Pricing component with toggle. Challenge from Frontend Mentor."}
+					urlDemo={"https://alvaro-j.github.io/pricing-component/"}
+					urlRepo={"https://github.com/alvaro-j/pricing-component"}
+					imgAlt="pricing component"
+					title="Pricing component app"
+				/>
+				<Projeto
+					urlImg={"images/digital-clock.bmp"}
+					textSpan={"Digital clock made with HTML, CSS and JavaScript."}
+					urlDemo={"https://alvaro-j.github.io/digital-clock/"}
+					urlRepo={"https://github.com/alvaro-j/digital-clock"}
+					imgAlt="digital clock"
+					title="Digital clock"
+				/>
+				<Projeto
+					urlImg={"images/tip-calculator.bmp"}
+					textSpan={"Tip calculator app. Challenge from Frondend Mentor."}
+					urlDemo={"https://alvaro-j.github.io/tip-calculator-app/"}
+					urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
+					imgAlt="tip calculator app"
+					title="Tip calculator app"
+				/>
+				<Projeto urlImg={"images/interrogacao.svg"} textSpan={"Soon..."} urlDemo={"http://github.com/alvaro-j/"} urlRepo={"http://github.com/alvaro-j/"} imgAlt="interrogação" title="Soon..." />
+				<Projeto urlImg={"images/interrogacao.svg"} textSpan={"Soon..."} urlDemo={"http://github.com/alvaro-j/"} urlRepo={"http://github.com/alvaro-j/"} imgAlt="interrogação" title="Soon.." />
+			</Grid>
+		</Container>
 	);
 }

@@ -1,29 +1,52 @@
 import React from "react";
 
-const Projeto = ({textSpan, urlImg, urlDemo, urlRepo, imgAlt}) => {
+import { Typography, CardActions, CardContent, CardMedia, Grid, Button, Card } from "@material-ui/core";
+
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles(() => ({
+	buttons: {
+		marginTop: "40px",
+	},
+	card: {
+		height: "100%",
+		flex: "flex",
+		flexDirection: "column",
+		"&:hover": {
+			transform: "scale(1.05)",
+			transition: "0.4s",
+		},
+	},
+	cardMedia: {
+		paddingTop: "56.25%", // isso deixa a imagem em 16:9
+	},
+	cardContent: {
+		flexGrow: 1,
+	},
+}));
+
+const Projeto = ({ title, textSpan, urlImg, urlDemo, urlRepo, imgAlt }) => {
+	const classes = useStyles();
 	return (
-			<div className="projeto-item">
-				<img draggable="false" src={urlImg} alt={imgAlt}></img>
-				<span>{textSpan}</span>
-				<div className="container-btn">
-					<a
-						className="btn"
-						href={urlDemo}
-						target="_blank"
-						rel="noreferrer"
-					>
+		<Grid item xs={12} sm={6} md={4}>
+			<Card className={classes.card}>
+				<CardMedia className={classes.cardMedia} image={urlImg} alt={imgAlt} />
+				<CardContent className={classes.cardContent}>
+					<Typography gutterBottom variant="h5">
+						{title}
+					</Typography>
+					<Typography>{textSpan}</Typography>
+				</CardContent>
+				<CardActions>
+					<Button target="_blank" href={urlDemo} variant="contained" size="small" color="primary">
 						Demo
-					</a>
-					<a
-						className="btn"
-						href={urlRepo}
-						target="_blank"
-						rel="noreferrer"
-					>
+					</Button>
+					<Button target="_blank" href={urlRepo} variant="contained" size="small" color="primary">
 						Repo
-					</a>
-				</div>
-			</div>
+					</Button>
+				</CardActions>
+			</Card>
+		</Grid>
 	);
 };
 

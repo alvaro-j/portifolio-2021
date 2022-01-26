@@ -36,6 +36,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### What I learned📝
 
+- Use Material UI library.
+```js
+<CardActions>
+					<Button target="_blank" href={urlDemo} variant="contained" size="small" color="primary">
+						Demo
+					</Button>
+					<Button target="_blank" href={urlRepo} variant="contained" size="small" color="primary">
+						Repo
+					</Button>
+				</CardActions>
+```
 - Use <strong>React Hooks</strong>. In this case i wanted to change the page title:
 ```js
 const [pageTitle, setPageTitle] = React.useState(document.title);

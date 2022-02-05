@@ -34,6 +34,14 @@ export default function Projetos() {
 			</Typography>
 			<Grid container spacing={4}>
 				<Projeto
+					urlImg={"images/buylist-2.0.png"}
+					textSpan={" Buylist made with React Context API."}
+					urlDemo={"https://buylist-2-0.vercel.app/"}
+					urlRepo={"https://github.com/alvaro-j/buylist-2.0"}
+					imgAlt="buylist 2.0"
+					title="buyList Context API"
+				/>
+				<Projeto
 					urlImg={"images/weather-app.png"}
 					textSpan={"Weather app using OpenWeather API."}
 					urlDemo={"https://weather-app-jet-iota.vercel.app/"}
@@ -58,19 +66,19 @@ export default function Projetos() {
 					title="Url shortener app"
 				/>
 				<Projeto
-					urlImg={"images/buylist.png"}
-					textSpan={"Buy list with add and remove function. Made with JavaScript, HTML and CSS only."}
-					urlDemo={"https://alvaro-j.github.io/buylist-project/"}
-					urlRepo={"https://github.com/alvaro-j/buylist-project"}
-					imgAlt="buylist"
-				/>
-				<Projeto
 					urlImg={"images/pricing-component.png"}
 					textSpan={"Pricing component with toggle. Challenge from Frontend Mentor."}
 					urlDemo={"https://alvaro-j.github.io/pricing-component/"}
 					urlRepo={"https://github.com/alvaro-j/pricing-component"}
 					imgAlt="pricing component"
 					title="Pricing component app"
+				/>
+				<Projeto
+					urlImg={"images/buylist.png"}
+					textSpan={"Buy list with add and remove function. Made with JavaScript, HTML and CSS only."}
+					urlDemo={"https://alvaro-j.github.io/buylist-project/"}
+					urlRepo={"https://github.com/alvaro-j/buylist-project"}
+					imgAlt="buylist"
 				/>
 				<Projeto
 					urlImg={"images/digital-clock.bmp"}
@@ -87,14 +95,6 @@ export default function Projetos() {
 					urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
 					imgAlt="tip calculator app"
 					title="Tip calculator app"
-				/>
-				<Projeto
-					urlImg={"images/interrogacao.svg"}
-					textSpan={"Soon..."}
-					urlDemo={"http://github.com/alvaro-j/"}
-					urlRepo={"http://github.com/alvaro-j/"}
-					imgAlt="interrogação"
-					title="Soon..."
 				/>
 				<Projeto
 					urlImg={"images/interrogacao.svg"}

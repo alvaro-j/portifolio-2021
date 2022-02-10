@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Links🔗
 
-- Live Site URL: [Portfolio](https://portifolio-2021-ecru.vercel.app/)
+- Live Site URL: [Portfolio](https://alvaro-j-ecru.vercel.app/)
 
 ## My process🧩
 

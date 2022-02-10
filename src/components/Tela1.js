@@ -52,7 +52,7 @@ export default function Tela1() {
 							</div>
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>
-								<p>Inglês fluente</p>
+								<p>Inglês avançado</p>
 							</div>
 						</div>
 					</div>

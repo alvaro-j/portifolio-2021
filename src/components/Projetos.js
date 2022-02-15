@@ -34,6 +34,14 @@ export default function Projetos() {
 			</Typography>
 			<Grid container spacing={4}>
 				<Projeto
+					urlImg={"images/whats2.png"}
+					textSpan={"Chat app made with React and Firebase."}
+					urlDemo={"https://chat-app-react-indol.vercel.app/"}
+					urlRepo={"https://github.com/alvaro-j/chat-app-react"}
+					imgAlt="whatsapp 2"
+					title="React chat app"
+				/>
+				<Projeto
 					urlImg={"images/buylist-2.0.png"}
 					textSpan={" Buylist made with React Context API."}
 					urlDemo={"https://buylist-2-0.vercel.app/"}
@@ -75,7 +83,9 @@ export default function Projetos() {
 				/>
 				<Projeto
 					urlImg={"images/buylist.png"}
-					textSpan={"Buy list with add and remove function. Made with JavaScript, HTML and CSS only."}
+					textSpan={
+						"Buy list with add and remove function. Made with JavaScript, HTML and CSS only."
+					}
 					urlDemo={"https://alvaro-j.github.io/buylist-project/"}
 					urlRepo={"https://github.com/alvaro-j/buylist-project"}
 					imgAlt="buylist"
@@ -95,14 +105,6 @@ export default function Projetos() {
 					urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
 					imgAlt="tip calculator app"
 					title="Tip calculator app"
-				/>
-				<Projeto
-					urlImg={"images/interrogacao.svg"}
-					textSpan={"Soon..."}
-					urlDemo={"http://github.com/alvaro-j/"}
-					urlRepo={"http://github.com/alvaro-j/"}
-					imgAlt="interrogação"
-					title="Soon.."
 				/>
 			</Grid>
 		</Container>

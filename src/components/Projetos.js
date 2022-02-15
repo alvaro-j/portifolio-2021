@@ -89,6 +89,7 @@ export default function Projetos() {
 					urlDemo={"https://alvaro-j.github.io/buylist-project/"}
 					urlRepo={"https://github.com/alvaro-j/buylist-project"}
 					imgAlt="buylist"
+					title="Simple shop list"
 				/>
 				<Projeto
 					urlImg={"images/digital-clock.bmp"}

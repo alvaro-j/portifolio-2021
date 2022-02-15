@@ -36,7 +36,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### What I learned📝
 
-- Use Material UI library.
+- Use <strong>Material UI</strong> library.
 ```js
 <CardActions>
 	<Button target="_blank" href={urlDemo} variant="contained" size="small" color="primary">

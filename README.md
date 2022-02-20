@@ -33,6 +33,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React.js, Hooks
 - Create React App
 - SASS
+- Material UI
 
 ### What I learned📝
 

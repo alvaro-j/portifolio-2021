@@ -50,6 +50,14 @@ export default function Projetos() {
 					title="buyList Context API"
 				/>
 				<Projeto
+					urlImg={"images/pwa-weather-app.png"}
+					textSpan={"PWA weather app made with React and OpenWeatherAPI. "}
+					urlDemo={"https://pwa-weather-app-six.vercel.app/"}
+					urlRepo={"https://github.com/alvaro-j/pwa-weather-app"}
+					imgAlt="pwa weather app"
+					title="PWA Weather App"
+				/>
+				<Projeto
 					urlImg={"images/weather-app.png"}
 					textSpan={"Weather app using OpenWeather API."}
 					urlDemo={"https://weather-app-jet-iota.vercel.app/"}

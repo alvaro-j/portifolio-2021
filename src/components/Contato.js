@@ -1,20 +1,18 @@
 import React from "react";
 
+import { Trans } from "react-i18next";
+
 export default function Contato() {
 	return (
 		<div className="container">
 			<section className="contato">
 				<article>
-					<h1>Como me encontrar:</h1>
+					<h1><Trans>How to find me</Trans>:</h1>
 					<ul>
 						<li>
 							<img src="images/github.svg" alt="github icon"></img>
 							<span>
-								<a
-									href="https://www.github.com/alvaro-j"
-									target="_blank"
-									rel="noreferrer"
-								>
+								<a href="https://www.github.com/alvaro-j" target="_blank" rel="noreferrer">
 									Github
 								</a>
 							</span>
@@ -38,11 +36,7 @@ export default function Contato() {
 					</ul>
 				</article>
 				<div className="contato-img">
-					<img
-						draggable="false"
-						src="images/undraw_contact_us_15o2.svg"
-						alt="contact icons"
-					></img>
+					<img draggable="false" src="images/undraw_contact_us_15o2.svg" alt="contact icons"></img>
 				</div>
 			</section>
 		</div>

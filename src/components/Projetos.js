@@ -1,6 +1,8 @@
 import React from "react";
 import Projeto from "./Projeto";
 
+import { Trans } from "react-i18next";
+
 import { Container, Grid, Typography } from "@material-ui/core";
 
 import { makeStyles } from "@material-ui/core";
@@ -30,7 +32,7 @@ export default function Projetos() {
 	return (
 		<Container className={classes.cardGrid} maxWidth="md">
 			<Typography className={classes.typography} variant="h1">
-				Projetos:
+				<Trans>Projects</Trans>:
 			</Typography>
 			<Grid container spacing={4}>
 				<Projeto

@@ -115,6 +115,22 @@ export default function Projetos() {
 					imgAlt="tip calculator app"
 					title="Tip calculator app"
 				/>
+				<Projeto
+					urlImg={"images/interrogacao.svg"}
+					textSpan={""}
+					urlDemo={"https://github.com/alvaro-j"}
+					urlRepo={"http://github.com/alvaro-j"}
+					imgAlt="question mark"
+					title="Soon..."
+				/>
+				<Projeto
+					urlImg={"images/interrogacao.svg"}
+					textSpan={""}
+					urlDemo={"https://github.com/alvaro-j"}
+					urlRepo={"http://github.com/alvaro-j"}
+					imgAlt="question mark"
+					title="Soon..."
+				/>
 			</Grid>
 		</Container>
 	);

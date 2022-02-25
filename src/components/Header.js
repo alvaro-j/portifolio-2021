@@ -8,6 +8,8 @@ import Projetos from "./Projetos";
 
 import { useTranslation, Trans } from "react-i18next";
 
+import ToggleButton from "react-toggle-button";
+
 const Header = () => {
 	const [pageTitle, setPageTitle] = React.useState(document.title);
 
@@ -15,11 +17,21 @@ const Header = () => {
 		document.title = pageTitle; //quando o componento for renderizado pelo setPageTitle, ele executa esse useEffect pra trocar o título da página
 	});
 
+	const [languageValue, setLanguageValue] = React.useState(true);
 	const { i18n } = useTranslation();
-	const changeLanguage = (lng) => {
-		i18n.changeLanguage(lng);
+	const changeLanguage = () => {
+		if (i18n.language === "pt") {
+			i18n.changeLanguage("en");
+			setLanguageValue(!languageValue);
+		} else {
+			i18n.changeLanguage("pt");
+			setLanguageValue(!languageValue);
+		}
 	};
 
+	React.useEffect(() => {
+		i18n.changeLanguage("en");
+	}, []);
 	return (
 		<Router>
 			<header className="header">
@@ -76,8 +88,22 @@ const Header = () => {
 								<Trans>Projects</Trans>
 							</li>
 						</NavLink>
-						<button onClick={() => changeLanguage("en")}>en</button>
-						<button onClick={() => changeLanguage("pt")}>pt</button>
+						<ToggleButton
+							value={languageValue}
+							onToggle={() => changeLanguage()}
+							inactiveLabel="pt"
+							activeLabel="en"
+							colors={{
+								active: {
+									base: "rrgb(81, 81, 194)",
+									hover: "rgb(177, 191, 215)",
+								},
+								inactive: {
+									base: "rrgb(81, 81, 194)",
+									hover: "rgb(177, 191, 215)",
+								},
+							}}
+						/>
 					</ul>
 				</nav>
 			</header>

@@ -48,7 +48,9 @@ const Header = () => {
 							activeClassName="link-active"
 							to="/contato"
 						>
-							<li><Trans>Contact</Trans></li>
+							<li>
+								<Trans>Contact</Trans>
+							</li>
 						</NavLink>
 						<NavLink
 							onClick={({ target }) => {
@@ -58,7 +60,9 @@ const Header = () => {
 							activeClassName="link-active"
 							to="/formacao"
 						>
-							<li><Trans>Education</Trans></li>
+							<li>
+								<Trans>Education</Trans>
+							</li>
 						</NavLink>
 						<NavLink
 							onClick={({ target }) => {
@@ -68,7 +72,9 @@ const Header = () => {
 							activeClassName="link-active"
 							to="/projetos"
 						>
-							<li><Trans>Projects</Trans></li>
+							<li>
+								<Trans>Projects</Trans>
+							</li>
 						</NavLink>
 						<button onClick={() => changeLanguage("en")}>en</button>
 						<button onClick={() => changeLanguage("pt")}>pt</button>

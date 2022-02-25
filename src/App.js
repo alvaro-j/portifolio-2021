@@ -8,15 +8,13 @@ const App = () => {
 		const MySwal = withReactContent(Swal);
 		MySwal.fire({
 			position: "top-end",
-			title: "Navegue por aqui &uarr;",
+			title: "Browse here &uarr;",
 			showConfirmButton: false,
 			timer: 1500,
 			timerProgressBar: true,
 		});
-	}, [])
+	}, []);
 	return <Header />;
 };
-
-
 
 export default App;

@@ -31,7 +31,7 @@ const Header = () => {
 
 	React.useEffect(() => {
 		i18n.changeLanguage("en");
-	}, []);
+	}, [i18n]);
 	return (
 		<Router>
 			<header className="header">

@@ -9,7 +9,7 @@ import "./styles/contato.scss";
 import "./styles/formacao.scss";
 import "./styles/responsive.scss";
 
-import "./translations";
+import "./translations.js";
 
 ReactDOM.render(
 	<React.StrictMode>

@@ -6,12 +6,20 @@ import Contato from "./Contato";
 import Formacao from "./Formacao";
 import Projetos from "./Projetos";
 
+import { useTranslation, Trans } from "react-i18next";
+
 const Header = () => {
 	const [pageTitle, setPageTitle] = React.useState(document.title);
 
 	React.useEffect(() => {
 		document.title = pageTitle; //quando o componento for renderizado pelo setPageTitle, ele executa esse useEffect pra trocar o título da página
 	});
+
+	const { i18n } = useTranslation();
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	};
+
 	return (
 		<Router>
 			<header className="header">
@@ -27,9 +35,7 @@ const Header = () => {
 				<nav id="nav">
 					<button
 						id="btn-mobile"
-						onClick={({ currentTarget }) =>
-							currentTarget.parentElement.classList.toggle("active")
-						}
+						onClick={({ currentTarget }) => currentTarget.parentElement.classList.toggle("active")}
 					>
 						<span id="hamburguer"></span>
 					</button>
@@ -37,39 +43,35 @@ const Header = () => {
 						<NavLink
 							onClick={({ target }) => {
 								setPageTitle("Portifólio - Contato");
-								target.parentElement.parentElement.parentElement.classList.remove(
-									"active"
-								);
+								target.parentElement.parentElement.parentElement.classList.remove("active");
 							}}
 							activeClassName="link-active"
 							to="/contato"
 						>
-							<li>Contato</li>
+							<li><Trans>Contact</Trans></li>
 						</NavLink>
 						<NavLink
 							onClick={({ target }) => {
 								setPageTitle("Portifólio - Formação");
-								target.parentElement.parentElement.parentElement.classList.remove(
-									"active"
-								);
+								target.parentElement.parentElement.parentElement.classList.remove("active");
 							}}
 							activeClassName="link-active"
 							to="/formacao"
 						>
-							<li>Formação</li>
+							<li><Trans>Education</Trans></li>
 						</NavLink>
 						<NavLink
 							onClick={({ target }) => {
 								setPageTitle("Portifólio - Projetos");
-								target.parentElement.parentElement.parentElement.classList.remove(
-									"active"
-								);
+								target.parentElement.parentElement.parentElement.classList.remove("active");
 							}}
 							activeClassName="link-active"
 							to="/projetos"
 						>
-							<li>Projetos</li>
+							<li><Trans>Projects</Trans></li>
 						</NavLink>
+						<button onClick={() => changeLanguage("en")}>en</button>
+						<button onClick={() => changeLanguage("pt")}>pt</button>
 					</ul>
 				</nav>
 			</header>

@@ -42,7 +42,6 @@ i18n
 			},
 		},
 		fallbackLng: "en",
-		debug: true, // remove this later man
 		ns: ["translations"],
 		defaultNS: "translations",
 		keySeparator: false,

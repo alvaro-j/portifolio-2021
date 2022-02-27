@@ -11,7 +11,6 @@ export default function Tela1() {
 		<div>
 			<section className="introducao">
 				<article>
-					
 					<h2>
 						👋<Trans>Hello world</Trans>
 					</h2>
@@ -27,7 +26,11 @@ export default function Tela1() {
 						<div className="knowledge-itens active-know-div">
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>
-								<p>JavaScript, React</p>
+								<p>JavaScript, React.js</p>
+							</div>
+							<div className="knowledge-item">
+								<img src="images/check.png" alt="check icon"></img>
+								<p>Material UI</p>
 							</div>
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>

@@ -88,22 +88,24 @@ const Header = () => {
 								<Trans>Projects</Trans>
 							</li>
 						</NavLink>
-						<ToggleButton
-							value={languageValue}
-							onToggle={() => changeLanguage()}
-							inactiveLabel="pt"
-							activeLabel="en"
-							colors={{
-								active: {
-									base: "rrgb(81, 81, 194)",
-									hover: "rgb(177, 191, 215)",
-								},
-								inactive: {
-									base: "rrgb(81, 81, 194)",
-									hover: "rgb(177, 191, 215)",
-								},
-							}}
-						/>
+						<span className="toggle-btn">
+							<ToggleButton
+								value={languageValue}
+								onToggle={() => changeLanguage()}
+								inactiveLabel="pt"
+								activeLabel="en"
+								colors={{
+									active: {
+										base: "rrgb(81, 81, 194)",
+										hover: "rgb(177, 191, 215)",
+									},
+									inactive: {
+										base: "rrgb(81, 81, 194)",
+										hover: "rgb(177, 191, 215)",
+									},
+								}}
+							/>
+						</span>
 					</ul>
 				</nav>
 			</header>

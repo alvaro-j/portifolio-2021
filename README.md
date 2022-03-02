@@ -34,6 +34,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Create React App
 - SASS
 - Material UI
+- i18n(internationalization-framework)
 
 ### What I learned📝
 

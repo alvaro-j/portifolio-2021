@@ -32,19 +32,22 @@ const Header = () => {
 	React.useEffect(() => {
 		i18n.changeLanguage("en");
 	}, [i18n]);
+
+	const nav = React.useRef();
+
 	return (
 		<Router>
 			<header className="header">
 				<Link
-					onClick={({ target }) => {
+					onClick={() => {
 						setPageTitle("Portifólio - Home");
-						target.parentElement.nextSibling.classList.remove("active");
+						nav.current.classList.remove("active");
 					}}
 					to="/"
 				>
 					<h1 id="logo">Álvaro</h1>
 				</Link>
-				<nav id="nav">
+				<nav id="nav" ref={nav}>
 					<button
 						id="btn-mobile"
 						onClick={({ currentTarget }) => currentTarget.parentElement.classList.toggle("active")}

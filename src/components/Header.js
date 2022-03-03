@@ -50,7 +50,7 @@ const Header = () => {
 				<nav id="nav" ref={nav}>
 					<button
 						id="btn-mobile"
-						onClick={({ currentTarget }) => currentTarget.parentElement.classList.toggle("active")}
+						onClick={() => nav.current.classList.toggle("active")}
 					>
 						<span id="hamburguer"></span>
 					</button>

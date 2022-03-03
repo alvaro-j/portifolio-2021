@@ -40,7 +40,7 @@ const Header = () => {
 			<header className="header">
 				<Link
 					onClick={() => {
-						setPageTitle("Portifólio - Home");
+						setPageTitle("Portfolio - Home");
 						nav.current.classList.remove("active");
 					}}
 					to="/"
@@ -48,16 +48,13 @@ const Header = () => {
 					<h1 id="logo">Álvaro</h1>
 				</Link>
 				<nav id="nav" ref={nav}>
-					<button
-						id="btn-mobile"
-						onClick={() => nav.current.classList.toggle("active")}
-					>
+					<button id="btn-mobile" onClick={() => nav.current.classList.toggle("active")}>
 						<span id="hamburguer"></span>
 					</button>
 					<ul className="menu">
 						<NavLink
 							onClick={() => {
-								setPageTitle("Portifólio - Contato");
+								setPageTitle("Portfolio - Contacts");
 								nav.current.classList.remove("active");
 							}}
 							activeClassName="link-active"
@@ -69,24 +66,24 @@ const Header = () => {
 						</NavLink>
 						<NavLink
 							onClick={() => {
-								setPageTitle("Portifólio - Formação");
+								setPageTitle("Portfolio - Education");
 								nav.current.classList.remove("active");
 							}}
 							activeClassName="link-active"
 							to="/formacao"
-							>
+						>
 							<li>
 								<Trans>Education</Trans>
 							</li>
 						</NavLink>
 						<NavLink
 							onClick={() => {
-								setPageTitle("Portifólio - Projetos");
+								setPageTitle("Portfolio - Projects");
 								nav.current.classList.remove("active");
 							}}
 							activeClassName="link-active"
 							to="/projetos"
-							>
+						>
 							<li>
 								<Trans>Projects</Trans>
 							</li>

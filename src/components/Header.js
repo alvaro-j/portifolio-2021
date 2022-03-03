@@ -30,10 +30,10 @@ const Header = () => {
 	};
 
 	React.useEffect(() => {
-		i18n.changeLanguage("en");
+		i18n.changeLanguage("en"); // change the language to en when the page loads
 	}, [i18n]);
 
-	const nav = React.useRef();
+	const nav = React.useRef(); // refers to the nav mobile menu
 
 	return (
 		<Router>

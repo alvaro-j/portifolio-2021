@@ -85,6 +85,10 @@ let toggleMenu = () => {
   </Route>
 </Switch>
 ```
+- Use <strong>SASS</strong> in a React project.
+```js
+import "./styles/global.scss";
+```
 ### Useful resources
 
 - [Mobile menu](https://www.youtube.com/watch?v=DnODupiIAiE) - This helped me understand how to create a menu for mobile devices. I'd recommend it to anyone who wants to understand this.

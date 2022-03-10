@@ -1,6 +1,6 @@
 # Personal portfolio - 2021 verison
 
-![image](https://user-images.githubusercontent.com/86482525/134183976-a4f694b8-920a-48e2-8a31-3ac9ec15dbb8.png)
+![image](https://user-images.githubusercontent.com/86482525/157653388-c4507631-8d00-484e-b146-3cef1d03db95.png)
 
 ## Getting Started with Create React App ⚛
 

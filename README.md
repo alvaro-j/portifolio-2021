@@ -1,4 +1,4 @@
-# Personal portfolio - 2021 verison
+# Personal portfolio - 2021 version
 
 ![image](https://user-images.githubusercontent.com/86482525/157653388-c4507631-8d00-484e-b146-3cef1d03db95.png)
 

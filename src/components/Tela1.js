@@ -38,6 +38,10 @@ export default function Tela1() {
 							</div>
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>
+								<p>Tailwind CSS</p>
+							</div>
+							<div className="knowledge-item">
+								<img src="images/check.png" alt="check icon"></img>
 								<p>CSS, SASS, BEM</p>
 							</div>
 							<div className="knowledge-item">

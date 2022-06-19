@@ -36,6 +36,14 @@ export default function Projetos() {
 			</Typography>
 			<Grid container spacing={4}>
 				<Projeto
+					urlImg={"images/feedget.png"}
+					textSpan={" Project developed on NLW Return using React.js, Node.js and React Native."}
+					urlDemo={"https://nlw-return-alvaro-j.vercel.app/"}
+					urlRepo={"https://github.com/alvaro-j/NLW-Return"}
+					imgAlt="feedget"
+					title="NLW Return Feedget"
+				/>
+				<Projeto
 					urlImg={"images/whats2.png"}
 					textSpan={"Chat app made with React and Firebase."}
 					urlDemo={"https://chat-app-react-indol.vercel.app/"}
@@ -116,14 +124,6 @@ export default function Projetos() {
 					urlRepo={"http://github.com/alvaro-j/tip-calculator-app"}
 					imgAlt="tip calculator app"
 					title="Tip calculator app"
-				/>
-				<Projeto
-					urlImg={"images/interrogacao.svg"}
-					textSpan={""}
-					urlDemo={"https://github.com/alvaro-j"}
-					urlRepo={"http://github.com/alvaro-j"}
-					imgAlt="question mark"
-					title="Soon..."
 				/>
 				<Projeto
 					urlImg={"images/interrogacao.svg"}

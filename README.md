@@ -93,6 +93,7 @@ import "./styles/global.scss";
 
 - [Mobile menu](https://www.youtube.com/watch?v=DnODupiIAiE) - This helped me understand how to create a menu for mobile devices. I'd recommend it to anyone who wants to understand this.
 - [Icons](https://freeicons.io/) - All icons of the portfolio are from Free Icons.
+- [Emoji icons](https://icons8.com/) - Icons for the fingers emojis from the home page.
 
 ## Author🙋🏻
 

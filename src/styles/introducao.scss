@@ -49,14 +49,17 @@
 	&.active-know-div {
 		span {
 			&::after {
-				content: "☝";
+				content: url("../../public/images/icons8-backhand-index-pointing-up-16.png");
+
 			}
 		}
 	}
 	span {
 		cursor: pointer;
 		&::after {
-			content: "👇";
+			content: url("../../public/images/icons8-backhand-index-pointing-down-16.png");
+			width: 10px;
+			height: 10px;
 			display: inline-block;
 			margin-left: 10px;
 		}

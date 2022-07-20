@@ -26,7 +26,11 @@ export default function Tela1() {
 						<div className="knowledge-itens active-know-div">
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>
-								<p>JavaScript, React.js</p>
+								<p>React.js</p>
+							</div>
+							<div className="knowledge-item">
+								<img src="images/check.png" alt="check icon"></img>
+								<p>TypeScript, JavaScript</p>
 							</div>
 							<div className="knowledge-item">
 								<img src="images/check.png" alt="check icon"></img>
